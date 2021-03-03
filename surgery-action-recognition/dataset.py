@@ -229,6 +229,12 @@ class SurgeryDataset(Dataset):
     def video_path(self, video_id):
         return self.data_dir + "/videos/" + video_id + ".mp4"
 
+
+#    def video_path(self, video_id):
+#        return self.data_dir + video_id + ".mp4"
+
+
+
     def download_clip(self, video_id, start_seconds, end_seconds):
         remote_video_path = "https://www.youtube.com/watch?v=" + video_id
         local_path = self.data_dir + 'videos/' + video_id + '-' + str(start_seconds) + '-' + str(end_seconds) + '.mp4'
