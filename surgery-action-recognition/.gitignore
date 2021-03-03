@@ -1,0 +1,25 @@
+# project files
+**/.idea
+
+# cache files
+**/__pycache__
+**/.pytest_cache
+**/*.pyc
+# ignore runtime generated package scripts
+**/._*
+
+# build files
+**/dist
+*.spec
+
+#osx files
+**/.DS_Store
+
+# slurm files
+**/slurm*
+
+
+results/
+data/
+runs/
+saved_models/
